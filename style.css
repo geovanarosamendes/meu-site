@@ -1,0 +1,159 @@
+
+.body{
+    margin: 0;
+    overflow-x: hidden;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+#header{
+    background-color: rgb(247, 247, 247);
+    max-width: 100%;
+}
+
+.header-box-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.header-abs-top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.header-show-hide {
+    transition: opacity 0.3s ease;
+}
+.header-show-hide.hidden {
+    opacity: 0;
+}
+
+.container img{
+    width:auto;
+    height:auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 80px;
+}
+
+.logo img {
+    max-width: 100%;  /* Garante que a imagem não exceda o tamanho do contêiner */
+    width: 15%; /* Define a largura desejada para a imagem */
+    height: auto;     /* Mantém a proporção da imagem */
+    display: flex;
+    margin-right: 500px; /*centraliza a imagem (margem à direita)*/
+    margin-top: -65px; /*mover verticalmente*/
+}
+
+.buttoms_main button{
+    background:none;
+    border:none;
+    width:15%;
+    font-family:"Open Sans", sans-serif; 
+    font-size: 900; 
+    font-style: normal;
+    margin: 5px; /*espaçamento entre os botões*/
+    border-spacing: 100px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #261529;
+    text-align: left;
+}
+.buttoms_main menu{
+    display:flex;
+    margin-right: 100px;
+    margin-top: -100px;
+    justify-content: 100%; /* Centraliza os botões horizontalmente */
+    justify-content: flex-end;
+}
+
+/*session1 - 1ª imagem*/
+.img1{
+    position: relative;
+  display: inline-block;
+}
+.overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image1{
+    
+    width: 45%;
+    height: auto;
+}
+.img1:hover .overlay1{
+    opacity:1;
+}
+
+/*2ª imagem*/
+.img2{
+    position: relative;
+  display: inline-block;
+}
+.overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.image2{
+    width: 45%;
+    height: auto;
+}
+.img2:hover .overlay2{
+    opacity:1;
+}
+
+/*3ª imagem*/
+.img3{
+    position:relative;
+    display: inline-block;
+}
+.overlay3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.image3{
+    width: 45%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+.img3:hover .overlay3{
+    opacity:1;
+}
+
+.session1{
+    margin:px;
+    display: flex;
+    transform: translateX(100px);
+    max-width: 100%;
+
+}
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
